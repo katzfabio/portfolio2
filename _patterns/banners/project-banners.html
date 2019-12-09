@@ -1,0 +1,17 @@
+<div class="relative block text-center">
+  <img class="img-flex" src="{{include.url}}" alt="">
+  <div class="absolute pin-c text-center">
+
+    <div>
+      {% pattern buttons/logo-btn url="/index/" %}
+    </div>
+
+    <div class="gutter-2 flex-row flex-align-center flex-justify">
+      {% pattern buttons/left-arrow url=page.prev %}
+      <h1 class="max-length gutter-2 zetta push-0">{{include.heading}}</h1>
+      {% pattern buttons/right-arrow url=page.next %}
+    </div>
+
+  </div>
+
+</div>
